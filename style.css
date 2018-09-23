@@ -1,0 +1,96 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#redHalf {
+    position: relative;
+    height: 100vh;
+    flex: 1 1 auto;
+    background: radial-gradient( #FD0B0B 5%, #550101 85%)
+}
+
+#blueHalf {
+    position: relative;
+    height: 100vh;
+    flex: 1 1 auto;
+    background: radial-gradient( #1F31FF 5%, #0F176A 85%)
+}
+
+.setScore {
+    font-size: 5em;
+}
+
+#redSetScore {
+    float: right;
+    margin-right: 10px;
+}
+
+#redSetScore:after {
+    content: url(images/table-tennis-solid.svg);
+}
+
+.hidden:after {
+    visibility: hidden;
+}
+
+#blueSetScore {
+    float: left;
+    margin-left: 10px;
+}
+
+#blueSetScore:after {
+    content: url(images/table-tennis-solid.svg);
+}
+
+.matchScore {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 18em;
+}
+
+.fa {
+    padding: 30px;
+    font-size: 6em;
+}
+
+#redMinus {
+    position: absolute;
+    bottom: 30px;
+    left: 70px;
+}
+
+#redPlus {
+    position: absolute;
+    bottom: 30px;
+    right: 70px;
+}
+
+#blueMinus {
+    position: absolute;
+    bottom: 30px;
+    left: 70px;
+}
+
+#bluePlus {
+    position: absolute;
+    bottom: 30px;
+    right: 70px;
+}
+
+#service {
+    width: 70px;
+}
