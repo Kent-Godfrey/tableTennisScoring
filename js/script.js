@@ -62,24 +62,21 @@ function serviceOrder() {
     if (redGameScore <= 10 || blueGameScore <= 10) {
         if (totalScore % 4 >= 2) {
             serviceTurn = true;
-            document.getElementById("blueMatchScore").style.color = "white";
-            document.getElementById("redMatchScore").style.color = "yellow";
-
-
-            //document.getElementById("blueSetScore").classList.toggle("hidden");
-            document.getElementById("redMatchScore").style.color = "yellow";
+            //document.getElementById("blueMatchScore").style.color = "white";
+            document.getElementById("blueSetScore").classList.add("hidden");
+            document.getElementById("redSetScore").classList.remove("hidden");
         } else {
             serviceTurn = false;
-            document.getElementById("redMatchScore").style.color = "white";
-            document.getElementById("blueMatchScore").style.color = "yellow";
+            document.getElementById("redSetScore").classList.add("hidden");
+            document.getElementById("blueSetScore").classList.remove("hidden");
         }
     }
     if (redGameScore >= 10 && blueGameScore >= 10) {
         if (totalScore % 2 == 0) {
             serviceTurn = true;
-            document.getElementById("blueMatchScore").style.color = "white";
-            document.getElementById("redMatchScore").style.color = "yellow";
 
+            document.getElementById("blueSetScore").style.color = "white";
+            document.getElementById("redMatchScore").style.color = "yellow";
         } else {
             document.getElementById("redMatchScore").style.color = "white";
             document.getElementById("blueMatchScore").style.color = "yellow";
