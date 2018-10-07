@@ -94,3 +94,16 @@ html {
 #service {
     width: 70px;
 }
+
+@media screen and (min-width:640px) {
+    .setScore {
+        font-size: 4em;
+    }
+    .matchScore {
+        font-size: 10em;
+    }
+    .fa {
+        padding: 40px;
+        font-size: 4em;
+    }
+}
