@@ -59,12 +59,17 @@ html {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    font-size: 18em;
+    font-size: 14em;
 }
 
 .fa {
     padding: 30px;
     font-size: 6em;
+    transition: 0.2s;
+}
+
+.fa:active {
+    transform: translateY(4px);
 }
 
 #redMinus {
@@ -95,7 +100,7 @@ html {
     width: 70px;
 }
 
-@media screen and (min-width:640px) {
+@media screen and (max-width:1100px) {
     .setScore {
         font-size: 4em;
     }
@@ -105,5 +110,60 @@ html {
     .fa {
         padding: 40px;
         font-size: 4em;
+    }
+    #redMinus {
+        position: absolute;
+        bottom: 0px;
+        left: 40px;
+    }
+    #redPlus {
+        position: absolute;
+        bottom: 0px;
+        right: 40px;
+    }
+    #blueMinus {
+        position: absolute;
+        bottom: 0px;
+        left: 40px;
+    }
+    #bluePlus {
+        position: absolute;
+        bottom: 0px;
+        right: 40px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .setScore {
+        font-size: 2em;
+    }
+    .matchScore {
+        font-size: 8em;
+    }
+    .fa {
+        padding: 40px;
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width:650px) {
+    #redMinus {
+        left: 0px;
+    }
+    #redPlus {
+        right: 0px;
+    }
+    #blueMinus {
+        left: 0px;
+    }
+    #bluePlus {
+        right: 0px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .fa {
+        padding: 20px;
+        font-size: 2em;
     }
 }
